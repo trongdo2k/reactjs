@@ -83,6 +83,45 @@ function Myinformation(name){
     }
     return <h1>hello {name.me}</h1>;
 }
-const rost=ReactDOM.createRoot(document.querySelector("#app"));
-rost.render(<App/>)
 
+
+function App(){
+    const curent={
+        name:"trong",
+        age:22,
+        address:'namdinh'
+    };
+    return(
+        <div>
+            <Hello{...curent}/>
+        </div>
+    )
+}
+//prop laf readonly
+//có một số props đặc biệt
+//default Props=>cung caaps cacs gias trij mawcj ddinhj cho props trong truwongf howpj props đó không được truyền vào
+// Hello.propTypes={
+//     name:propTypes.string.isRequired,
+//     children:propTypes.node,
+// }
+// Hello.defaultProps={
+// name:"Trong"
+// }
+// function Avatar({src,alt})
+// {
+//     return(
+//         <img src={src} alt={alt}/>
+//     )
+// }
+// Avatar.propTypes={
+//     src:PropTypes.string.isRequied,
+//     alt:PropTypes.string,
+    
+// }
+// Avatar.defaultProps={
+// src:"https://th.bing.com/th/id/OIP.RjfDSi-pRAnF5zlCpASAEwHaE7?w=231&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+// alt:"ok",
+// }
+// const rost=ReactDOM.createRoot(document.querySelector("#app"));
+// rost.render(<Avatar/>)
+//conditional Rendering
