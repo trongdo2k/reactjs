@@ -1,0 +1,16 @@
+.user img{
+    border-radius:50% ;
+}
+*{
+    text-align: center;
+}
+.user button{
+    border-radius: 10px;
+    background-color: darkcyan;
+    color: #f5f5f5;
+}
+.user{
+    background-color: #f5f5f5;
+    border-radius: 15%;
+    margin: 10px;
+}
