@@ -124,10 +124,16 @@ const Avatarapp=()=>{
       return(
         <div className="avatar row">
             <h1 className="heading">User</h1>
-            <Userlist users={users}/>
+            <Userlist users={users} />
         </div>
       )
 };
-
+const HandlingEvent=()=>{
+  const Hanclick=(e)=>{
+      console.log(e);
+      console.log("click");
+  }
+  return <button onClick={(e)=>Hanclick(e)}>ok</button>
+}
 const root=ReactDOM.createRoot(document.querySelector("#infor"));
 root.render(<Avatarapp/>);

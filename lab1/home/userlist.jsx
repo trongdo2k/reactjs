@@ -1,7 +1,7 @@
 const Userlist=({users})=>{
-    const list=users.map((user)=><User user={user}/>)
+    const list=users.map((user )=><User  user={user} />)
     return <div className="userlist col-12">
-        {list}
+        {list } 
     </div>
 }
 Userlist.protoType={

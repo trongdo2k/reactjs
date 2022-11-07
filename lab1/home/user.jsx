@@ -7,6 +7,7 @@ const User=({user})=>{
         </div>
     )
 }
+
 const UserType=PropTypes.exact({
     id:PropTypes.string,
     fullname: PropTypes.string,
