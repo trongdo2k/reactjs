@@ -1,6 +1,7 @@
 
 
 const Review = ({ review, onPrev, onNext }) => {
+    
     return (
         <div className="review-card">
             <div className="review">
@@ -8,8 +9,8 @@ const Review = ({ review, onPrev, onNext }) => {
                     
 
                     <div className="author-info">
-                        <audio controls>
-                            <source src={review.mp3}/>
+                        <audio controls src={review.mp3}>
+                            
                         </audio>
                         <h4 className="author-name">{review.name}</h4>
                         <div className="author-job">{review.jobTitle}</div>
