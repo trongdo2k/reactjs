@@ -82,7 +82,7 @@ const App = () => {
 
     return (
         <div className="section-reviews">
-            <h2 className="section-heading">Our Reviews</h2>
+            
 
             <Review review={review} onPrev={handlePrev} onNext={handleNext} />
         </div>
